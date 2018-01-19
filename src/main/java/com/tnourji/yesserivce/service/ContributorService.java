@@ -1,7 +1,8 @@
-package com.tnourji.commontools.service;
+package com.tnourji.yesserivce.service;
 
-import com.tnourji.commontools.model.Contributor;
 import java.util.List;
+
+import com.tnourji.yesserivce.model.Contributor;
 
 /**
  * Service Interface for managing Contributor.

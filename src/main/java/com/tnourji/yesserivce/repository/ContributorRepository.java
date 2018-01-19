@@ -1,7 +1,8 @@
-package com.tnourji.commontools.repository;
+package com.tnourji.yesserivce.repository;
 
-import com.tnourji.commontools.model.Contributor;
 import org.springframework.stereotype.Repository;
+
+import com.tnourji.yesserivce.model.Contributor;
 
 import org.springframework.data.jpa.repository.*;
 import org.springframework.data.repository.query.Param;

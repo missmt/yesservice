@@ -1,13 +1,13 @@
-package com.tnourji.commontools.service.impl;
-
-import com.tnourji.commontools.model.Contributor;
-import com.tnourji.commontools.repository.ContributorRepository;
-import com.tnourji.commontools.service.ContributorService;
+package com.tnourji.yesserivce.service.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.tnourji.yesserivce.model.Contributor;
+import com.tnourji.yesserivce.repository.ContributorRepository;
+import com.tnourji.yesserivce.service.ContributorService;
 
 import java.util.List;
 

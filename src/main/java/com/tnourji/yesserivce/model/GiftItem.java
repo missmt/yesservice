@@ -1,4 +1,4 @@
-package com.tnourji.commontools.model;
+package com.tnourji.yesserivce.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.Cache;

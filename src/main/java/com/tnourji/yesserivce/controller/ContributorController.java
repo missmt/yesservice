@@ -1,4 +1,4 @@
-package com.tnourji.commontools.controller;
+package com.tnourji.yesserivce.controller;
 
 
 import java.net.URISyntaxException;
@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tnourji.commontools.model.Contributor;
-import com.tnourji.commontools.service.ContributorService;
+import com.tnourji.yesserivce.model.Contributor;
+import com.tnourji.yesserivce.service.ContributorService;
 
 /**
  * REST controller for managing Contributor.

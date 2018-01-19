@@ -1,4 +1,4 @@
-package com.tnourji.commontools.model;
+package com.tnourji.yesserivce.model;
 
 import java.io.Serializable;
 import java.util.HashSet;

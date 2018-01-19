@@ -1,4 +1,4 @@
-package com.tnourji.commontools.config;
+package com.tnourji.yesserivce.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
