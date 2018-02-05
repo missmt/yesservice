@@ -1,4 +1,4 @@
-package com.tnourji.yesserivce.model;
+package com.tnourji.yesserivces.model;
 
 import java.io.Serializable;
 import java.util.HashSet;
@@ -13,6 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -23,6 +24,8 @@ import javax.persistence.Table;
 public class Contributor implements Serializable {
 
     private static final long serialVersionUID = 1L;
+    @OneToMany(mappedBy = "contributor")
+    private Set<ContributorGiftItem> contributorGiftItem;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,12 +36,17 @@ public class Contributor implements Serializable {
 
     @Column(name = "last_name")
     private String lastName;
+    
+    
+  
+    public Set<ContributorGiftItem> getContributorGiftItem() {
+        return contributorGiftItem;
+    }
 
-    @ManyToMany
-    @JoinTable(name = "contributor_gift_items",
-               joinColumns = @JoinColumn(name="contributors_id", referencedColumnName="id"),
-               inverseJoinColumns = @JoinColumn(name="gift_items_id", referencedColumnName="id"))
-    private Set<GiftItem> giftItems = new HashSet<>();
+    public void setContributorGiftItem(Set<ContributorGiftItem> contributorGiftItem) {
+        this.contributorGiftItem = contributorGiftItem;
+    }
+
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
@@ -75,30 +83,9 @@ public class Contributor implements Serializable {
         this.lastName = lastName;
     }
 
-    public Set<GiftItem> getGiftItems() {
-        return giftItems;
-    }
+   
 
-    public Contributor giftItems(Set<GiftItem> giftItems) {
-        this.giftItems = giftItems;
-        return this;
-    }
-
-    public Contributor addGiftItems(GiftItem giftItem) {
-        this.giftItems.add(giftItem);
-        giftItem.getContributors().add(this);
-        return this;
-    }
-
-    public Contributor removeGiftItems(GiftItem giftItem) {
-        this.giftItems.remove(giftItem);
-        giftItem.getContributors().remove(this);
-        return this;
-    }
-
-    public void setGiftItems(Set<GiftItem> giftItems) {
-        this.giftItems = giftItems;
-    }
+    
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
 
     @Override

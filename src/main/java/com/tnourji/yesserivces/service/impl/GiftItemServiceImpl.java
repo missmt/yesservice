@@ -1,13 +1,13 @@
-package com.tnourji.yesserivce.service.impl;
+package com.tnourji.yesserivces.service.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.tnourji.yesserivce.model.GiftItem;
-import com.tnourji.yesserivce.repository.GiftItemRepository;
-import com.tnourji.yesserivce.service.GiftItemService;
+import com.tnourji.yesserivces.model.GiftItem;
+import com.tnourji.yesserivces.repository.GiftItemRepository;
+import com.tnourji.yesserivces.service.GiftItemService;
 
 import java.util.List;
 

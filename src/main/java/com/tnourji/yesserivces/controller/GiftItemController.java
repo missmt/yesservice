@@ -1,12 +1,12 @@
-package com.tnourji.yesserivce.controller;
+package com.tnourji.yesserivces.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.tnourji.yesserivce.model.GiftItem;
-import com.tnourji.yesserivce.service.GiftItemService;
+import com.tnourji.yesserivces.model.GiftItem;
+import com.tnourji.yesserivces.service.GiftItemService;
 
 import java.net.URI;
 import java.net.URISyntaxException;

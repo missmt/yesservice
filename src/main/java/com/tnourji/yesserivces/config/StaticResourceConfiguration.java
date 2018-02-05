@@ -1,4 +1,4 @@
-package com.tnourji.yesserivce.config;
+package com.tnourji.yesserivces.config;
 
 import org.apache.catalina.Context;
 import org.apache.catalina.connector.Connector;

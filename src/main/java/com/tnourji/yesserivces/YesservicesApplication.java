@@ -1,4 +1,4 @@
-package com.tnourji.yesserivce;
+package com.tnourji.yesserivces;
 
 import java.util.concurrent.Executor;
 
@@ -10,10 +10,10 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 @SpringBootApplication
 @EnableAsync
-public class CommontoolsApplication {
+public class YesservicesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CommontoolsApplication.class, args);
+		SpringApplication.run(YesservicesApplication.class, args);
 	}
 	 /**
      * async executor

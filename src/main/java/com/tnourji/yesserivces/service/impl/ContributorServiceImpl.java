@@ -1,13 +1,13 @@
-package com.tnourji.yesserivce.service.impl;
+package com.tnourji.yesserivces.service.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.tnourji.yesserivce.model.Contributor;
-import com.tnourji.yesserivce.repository.ContributorRepository;
-import com.tnourji.yesserivce.service.ContributorService;
+import com.tnourji.yesserivces.model.Contributor;
+import com.tnourji.yesserivces.repository.ContributorRepository;
+import com.tnourji.yesserivces.service.ContributorService;
 
 import java.util.List;
 
@@ -43,12 +43,12 @@ public class ContributorServiceImpl implements ContributorService{
      *
      * @return the list of entities
      */
-    @Override
-    @Transactional(readOnly = true)
-    public List<Contributor> findAll() {
-        log.debug("Request to get all Contributors");
-        return contributorRepository.findAllWithEagerRelationships();
-    }
+//    @Override
+//    @Transactional(readOnly = true)
+//    public List<Contributor> findAll() {
+//        log.debug("Request to get all Contributors");
+//        return contributorRepository.findAllWithEagerRelationships();
+//    }
 
     /**
      * Get one contributor by id.
@@ -56,12 +56,12 @@ public class ContributorServiceImpl implements ContributorService{
      * @param id the id of the entity
      * @return the entity
      */
-    @Override
-    @Transactional(readOnly = true)
-    public Contributor findOne(Long id) {
-        log.debug("Request to get Contributor : {}", id);
-        return contributorRepository.findOneWithEagerRelationships(id);
-    }
+//    @Override
+//    @Transactional(readOnly = true)
+//    public Contributor findOne(Long id) {
+//        log.debug("Request to get Contributor : {}", id);
+//        return contributorRepository.findOneWithEagerRelationships(id);
+//    }
 
     /**
      * Delete the contributor by id.
@@ -72,5 +72,17 @@ public class ContributorServiceImpl implements ContributorService{
     public void delete(Long id) {
         log.debug("Request to delete Contributor : {}", id);
         contributorRepository.delete(id);
+    }
+
+    @Override
+    public List<Contributor> findAll() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Contributor findOne(Long id) {
+        // TODO Auto-generated method stub
+        return null;
     }
 }

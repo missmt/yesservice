@@ -1,8 +1,8 @@
-package com.tnourji.yesserivce.service;
+package com.tnourji.yesserivces.service;
 
 import java.util.List;
 
-import com.tnourji.yesserivce.model.GiftItem;
+import com.tnourji.yesserivces.model.GiftItem;
 
 /**
  * Service Interface for managing GiftItem.

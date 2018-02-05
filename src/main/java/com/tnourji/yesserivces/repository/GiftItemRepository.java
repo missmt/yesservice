@@ -1,8 +1,8 @@
-package com.tnourji.yesserivce.repository;
+package com.tnourji.yesserivces.repository;
 
 import org.springframework.stereotype.Repository;
 
-import com.tnourji.yesserivce.model.GiftItem;
+import com.tnourji.yesserivces.model.GiftItem;
 
 import org.springframework.data.jpa.repository.*;
 
